@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Keep ACC POS</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_table_text">Стол</string>
+    <string name="button_delivery_text">Доставка</string>
+    <string name="button_banquet_text">Банкет</string>
+    <string name="text_waiter_text">Официант</string>
+    <string name="text_room">Зал</string>
+    <string name="text_total">Итого</string>
+    <string name="text_discount">Скидка</string>
+    <string name="text_for_payment">К оплате:</string>
+    <string name="button_check_settings">Настройки чека</string>
+    <string name="button_send_to_payment">Отправить на реализацию</string>
+    <string name="button_close_check">Закрыть счет</string>
+
+
+
+
+
+
+</resources>
