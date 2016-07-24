@@ -34,5 +34,12 @@
        <!-- <item name="background">@color/colorBackBtn</item>-->
 
     </style>
+    <!--<style name="TwoWayViewBase">
+        <item name="android:background">#999999</item>
+    </style>-->
+    <style name="TwoWayView">
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
 
 </resources>

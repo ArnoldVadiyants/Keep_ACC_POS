@@ -12,6 +12,25 @@
     <string name="button_check_settings">Настройки чека</string>
     <string name="button_send_to_payment">Отправить на реализацию</string>
     <string name="button_close_check">Закрыть счет</string>
+    <string name="text_check_item_number">Чек №</string>
+    <string name="text_check_item_title">Наименование</string>
+    <string name="text_check_item_measurement">Ед. Изм.</string>
+    <string name="text_check_item_count">Кол-во</string>
+    <string name="text_check_item_price">Цена</string>
+    <string name="text_check_item_sum">Сумма</string>
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="button_sign_in">Войти</string>
+    <string name="check_box_remember">Запомнить?</string>
+    <string name="button_help">Нужна помощь? </string>
+    <string name="registration_via_email"><b>Зарегистрироваться</b> через <b>e-mail</b> </string>
+
+
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered! Login Me.</string>
+    <string name="btn_logout">Выйти</string>
+
+
 
 
 

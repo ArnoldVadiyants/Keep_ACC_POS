@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 showFragmentBanquet();
             }
         });
-
-        showFragmentTables();
+        showTestFragment();
+       // showFragmentTables();
        // Toast.makeText(this, "Vasyliq", Toast.LENGTH_SHORT).show();
        // Snackbar.make(mFragmentContainer,"Vasya",Snackbar.LENGTH_SHORT).show();
     }
@@ -61,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
+    }
+    private void showTestFragment()
+    {
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragmentTest = new FragmentCheckMenu();
+        fm.beginTransaction().replace(R.id.fragment_container, fragmentTest)
+                .commit();
     }
 
     private void showFragmentBanquet()

@@ -10,4 +10,11 @@
     <dimen name="outer_margin">4dp</dimen>
     <dimen name="outer_margin_medium">8dp</dimen>
     <dimen name="outer_margin_big">16dp</dimen>
+    <dimen name="feed_width">120dp</dimen>
+    <dimen name="feed_height">120dp</dimen>
+    <dimen name="item_offset">8dp</dimen>
+
+
+
+
 </resources>

@@ -6,4 +6,10 @@
     <color name="colorToolBar">#F7F7F7</color>
     <color name="colorBackBtn">#007CAB</color>
     <color name="colorText">#898989</color>
+
+
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="btn_help">#00aaeb</color>
+
 </resources>
