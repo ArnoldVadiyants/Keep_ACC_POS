@@ -1,4 +1,4 @@
-package com.keepaccpos;
+package com.keepaccpos.models;
 
 /**
  * Created by Arnold on 23.07.2016.

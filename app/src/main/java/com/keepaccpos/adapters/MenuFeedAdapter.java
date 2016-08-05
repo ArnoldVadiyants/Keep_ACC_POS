@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.keepaccpos.FeedObject;
+import com.keepaccpos.models.FeedObject;
 import com.keepaccpos.R;
 import com.keepaccpos.view_holders.MenuFeedViewHolder;
 

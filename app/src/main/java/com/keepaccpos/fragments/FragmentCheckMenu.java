@@ -1,4 +1,4 @@
-package com.keepaccpos;
+package com.keepaccpos.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.keepaccpos.models.FeedObject;
+import com.keepaccpos.helpers.ItemOffsetDecoration;
+import com.keepaccpos.R;
 import com.keepaccpos.adapters.MenuFeedAdapter;
 
 import java.util.ArrayList;

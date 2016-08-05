@@ -1,4 +1,4 @@
-package com.keepaccpos;
+package com.keepaccpos.activities;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -11,6 +11,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+
+import com.keepaccpos.fragments.FragmentCheckMenu;
+import com.keepaccpos.fragments.FragmentTables;
+import com.keepaccpos.R;
 
 public class MainActivity extends AppCompatActivity {
     Button mTablesBtn;

@@ -1,4 +1,4 @@
-package com.keepaccpos;
+package com.keepaccpos.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
+
+import com.keepaccpos.R;
 
 /**
  * Created by Arnold on 18.07.2016.

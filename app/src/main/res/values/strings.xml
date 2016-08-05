@@ -24,6 +24,7 @@
     <string name="check_box_remember">Запомнить?</string>
     <string name="button_help">Нужна помощь? </string>
     <string name="registration_via_email"><b>Зарегистрироваться</b> через <b>e-mail</b> </string>
+    <string name="text_personal_pin">Персональный PIN</string>
 
 
     <string name="btn_link_to_register">Not a member? Sign up now.</string>

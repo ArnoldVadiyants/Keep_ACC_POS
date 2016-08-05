@@ -1,4 +1,4 @@
-package com.keepaccpos;
+package com.keepaccpos.helpers;
 
 import android.content.Context;
 import android.graphics.Rect;
