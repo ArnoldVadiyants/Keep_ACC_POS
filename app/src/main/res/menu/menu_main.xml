@@ -3,10 +3,31 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".activities.MainActivity">
 
-
+    <!--
+        <item
+            android:id="@+id/action_settings"
+            android:orderInCategory="100"
+            android:title="@string/action_settings"
+            app:showAsAction="never"/>-->
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
+        android:id="@+id/empty"
+        android:icon="@drawable/icon_action_overflow"
+        android:orderInCategory="101"
+        android:title="@string/text_menu"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/action_session_finish"
+                android:orderInCategory="100"
+                android:title="@string/action_session_finish"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_logout"
+                android:orderInCategory="100"
+                android:title="@string/action_logout"
+                app:showAsAction="never"/>
+        </menu>
+
+    </item>
 </menu>

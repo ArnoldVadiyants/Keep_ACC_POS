@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent"  android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_printer_ip" />
+        <EditText android:id="@+id/printerIP" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/printerBluetoothQuery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x1080080" android:contentDescription="@string/product_name" />
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="left" android:id="@+id/printerBluetooth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:ems="10" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView55" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_max_printer_columns" />
+        <EditText android:id="@+id/printerMaxColumns" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:inputType="number" />
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView5555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_invoice_print_multiply" />
+        <EditText android:id="@+id/printerMultiple" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:inputType="number" />
+        <CheckBox android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/printTableOnInvoice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Print table on invoice" />
+        <CheckBox android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/printCallNumberOnInvoice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/print_call_number_on_invoice" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2"
+            android:layout_gravity="right"/>
+
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_invoice_footer" />
+        <EditText android:id="@+id/invoiceFooter" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="3" android:ems="10"  />
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView11114455" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_printer_logo" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/logo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginBottom="30dp" android:src="0x108003f" android:contentDescription="@string/product_name" />
+            <ImageButton android:id="@+id/trash_logo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:src="0x108003c" android:contentDescription="@string/product_name" />
+        </LinearLayout>
+        <ImageView android:id="@+id/logoImage" android:layout_width="200dp" android:layout_height="wrap_content" />
+        <CheckBox android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/escPos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="30dp" android:text="@string/esc_pos_printer" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/escPosOptions" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView1111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_printer_cutter_cmd" />
+            <EditText android:id="@+id/printerCutterCmd" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" />
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView111144" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_printer_cashdrawer_cmd" />
+            <EditText android:id="@+id/printerCashdrawerCmd" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" />
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView11114466" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_printer_char_table" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@+id/printerCharTable" android:layout_width="55dp" android:layout_height="wrap_content" android:ems="10" android:inputType=""
+                          android:layout_gravity="center_vertical"/>
+                <Spinner android:id="@+id/characterTableChooser" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_character_encoding" />
+            <Spinner android:id="@+id/characterEncoding" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:id="@+id/textView11114334" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/settings_printer_char_size" />
+            <Spinner android:entries="@array/char_sizes" android:id="@+id/charSizeSpinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

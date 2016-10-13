@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-<item android:drawable="@drawable/circled_dot_checked" android:state_selected="true"/>
+<item android:drawable="@drawable/icon_dot_small" android:state_selected="true"/>
 
-<item android:drawable="@drawable/circled_dot_unchecked"/> <!-- default -->
+<item android:drawable="@android:color/transparent"/> <!-- default -->
 
 </selector>

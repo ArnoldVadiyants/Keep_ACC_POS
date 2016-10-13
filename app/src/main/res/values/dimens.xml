@@ -2,19 +2,38 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="action_bar_height">80dp</dimen>
+    <dimen name="button_of_toolbar_width">98dp</dimen>
+    <dimen name="action_bar_height_land">92dp</dimen>
+    <dimen name="button_of_toolbar_width_land">120dp</dimen>
+
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="label_size">100dp</dimen>
+    <dimen name="logo_size">64dp</dimen>
+    <dimen name="logo_size_in_toolbar">446dp</dimen>
+    <dimen name="label_size">146dp</dimen>
     <dimen name="label_size_big">150dp</dimen>
     <dimen name="icon_size">36dp</dimen>
     <dimen name="icon_size_big">48dp</dimen>
-    <dimen name="outer_margin">4dp</dimen>
+    <dimen name="outer_margin_small">4dp</dimen>
     <dimen name="outer_margin_medium">8dp</dimen>
-    <dimen name="outer_margin_big">16dp</dimen>
+    <dimen name="outer_margin">16dp</dimen>
+    <dimen name="outer_margin_big">32dp</dimen>
+    <dimen name="outer_margin_very_big">48dp</dimen>
+    <dimen name="outer_margin_very_big2">64dp</dimen>
+
     <dimen name="feed_width">120dp</dimen>
     <dimen name="feed_height">120dp</dimen>
     <dimen name="item_offset">8dp</dimen>
-    <dimen name="circle_dot_image_size">20dp</dimen>
-    <dimen name="button_pin">48dp</dimen>
+    <dimen name="dot_image_width">36dp</dimen>
+    <dimen name="dot_image_height">24dp</dimen>
+
+    <dimen name="button_pin_width">84dp</dimen>
+    <dimen name="button_pin_height">64dp</dimen>
+    <dimen name="button_check_height">60dp</dimen>
+    <dimen name="button_check_width">138dp</dimen>
+    <dimen name="button_registered_width">162dp</dimen>
+    <dimen name="button_cancel_height">36dp</dimen>
+
 
 
 

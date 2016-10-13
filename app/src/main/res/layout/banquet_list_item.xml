@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:padding="@dimen/outer_margin_medium">
+    <LinearLayout
+       
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+       >
+
+        <TextView
+             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_num_bill"
+            android:id="@+id/banquet_item_bill_number"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            />
+
+        <TextView
+             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_state"
+            android:id="@+id/banquet_item_state"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_date_start"
+            android:id="@+id/banquet_item_date_start"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_date_finish"
+            android:id="@+id/banquet_item_date_finish"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_staff"
+            android:id="@+id/banquet_item_staff"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_mobile"
+            android:id="@+id/banquet_item_mobile_number"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_changes"
+            android:id="@+id/banquet_item_changes"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_date"
+            android:id="@+id/banquet_item_date"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/banquet_item_client"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+           tools:text="@string/text_client"
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_hall"
+            android:id="@+id/banquet_item_check_hall"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_count_guest"
+            android:id="@+id/banquet_item_count_guest"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           tools:text="@string/text_discount2"
+            android:id="@+id/banquet_item_discount"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+           />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         tools:text="@string/text_prepay"
+        android:id="@+id/banquet_item_prepay"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/outer_margin_medium"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         tools:text="@string/text_sum_price"
+        android:id="@+id/banquet_item_sum_price"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/outer_margin_medium"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         tools:text="@string/text_reduction"
+        android:id="@+id/banquet_item_reduction"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/outer_margin_medium"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         tools:text="@string/text_total"
+        android:id="@+id/banquet_item_total"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/outer_margin_medium"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

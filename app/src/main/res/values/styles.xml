@@ -10,24 +10,23 @@
 
 
     </style>
-
-    <style name="AppTheme.NoActionBar.OverFlow">
+   <!-- <style name="AppTheme.NoActionBar.OverFlow">
         <item name="android:textColorSecondary">@color/colorBackBtn</item>
-     <!--   <item name="android:src">@drawable/menu_three_dots</item>-->
-    </style>
+     &lt;!&ndash;   <item name="android:src">@drawable/menu_three_dots</item>&ndash;&gt;
+    </style>-->
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:textColorSecondary">@color/colorBackBtn</item>
+  <!--      <item name="android:textColorSecondary">@color/colorBackBtn</item>-->
 
         <!--  <item name="actionOverflowButtonStyle">@style/AppTheme.NoActionBar.OverFlow</item>
           <item name="android:actionOverflowButtonStyle">@style/AppTheme.NoActionBar.OverFlow</item>-->
     </style>
 
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
-            <item name="android:textColorSecondary">@color/colorBackBtn</item>
-    <!--    <item name="background">@color/colorBackBtn</item>-->
+   <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+
 
     </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
@@ -37,9 +36,6 @@
     <!--<style name="TwoWayViewBase">
         <item name="android:background">#999999</item>
     </style>-->
-    <style name="TwoWayView">
-        <item name="android:orientation">vertical</item>
-        <item name="android:scrollbars">vertical</item>
-    </style>
+
 
 </resources>

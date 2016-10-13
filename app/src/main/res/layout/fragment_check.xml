@@ -9,10 +9,11 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="0">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/outer_margin_medium"
             >
@@ -20,86 +21,111 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/text_check_item_number"
                 android:id="@+id/textView7"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/fragment_check_cancel_refine"
+                android:layout_alignBottom="@+id/fragment_check_cancel_refine"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/fragment_check_item_number"
+                android:layout_alignParentBottom="false"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_alignTop="@+id/textView7"
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/textView7"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_cancel_height"
+                android:text="@string/button_cancel_refine2"
+                android:id="@+id/fragment_check_cancel_refine"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@drawable/button_back_border_gray"
+                android:paddingLeft="@dimen/outer_margin_medium"
+                android:paddingRight="@dimen/outer_margin_medium"
                 android:textStyle="bold"/>
 
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/outer_margin_medium"
+            android:padding="@dimen/outer_margin_medium"
+            android:background="@color/colorItemHeader"
+            android:layout_marginRight="@dimen/outer_margin_medium">
+
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/text_check_item_title"
-                android:id="@+id/textView8"
                 android:layout_below="@+id/textView7"
-                android:layout_marginTop="@dimen/outer_margin_medium"
-                android:textStyle="italic"
-                android:textSize="10dp"/>
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:textColor="@color/colorText"
+                android:layout_marginRight="@dimen/outer_margin_small"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/text_check_item_measurement"
-                android:id="@+id/textView9"
-                android:layout_toRightOf="@+id/textView8"
-                android:layout_alignTop="@+id/textView8"
-                android:layout_marginLeft="64dp"
-                android:textStyle="italic"
-                android:textSize="10dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/text_check_item_count"
                 android:id="@+id/textView10"
-                android:layout_toRightOf="@+id/textView9"
-                android:layout_toEndOf="@+id/textView9"
-                android:layout_alignTop="@+id/textView9"
-                android:layout_marginLeft="@dimen/outer_margin_big"
-                android:textStyle="italic"
-                android:textSize="10dp"/>
+                android:layout_toRightOf="@+id/check_list_item_measurement"
+                android:layout_toEndOf="@+id/check_list_item_measurement"
+                android:layout_alignTop="@+id/check_list_item_measurement"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/colorText"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/outer_margin_small"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/text_check_item_price"
                 android:id="@+id/textView11"
                 android:layout_alignParentTop="false"
                 android:layout_toRightOf="@+id/textView10"
                 android:layout_toEndOf="@+id/textView10"
                 android:layout_alignTop="@+id/textView10"
-                android:layout_marginLeft="@dimen/outer_margin_big"
-                android:textStyle="italic"
-                android:textSize="10dp"/>
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/colorText"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/outer_margin_small"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/text_check_item_sum"
                 android:id="@+id/textView12"
                 android:layout_alignParentTop="false"
                 android:layout_toRightOf="@+id/textView11"
                 android:layout_toEndOf="@+id/textView11"
                 android:layout_alignTop="@+id/textView11"
-                android:layout_marginLeft="@dimen/outer_margin_big"
-                android:textStyle="italic"
-                android:textSize="10dp"/>
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/colorText"
+                android:gravity="center"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Small Text"
-                android:id="@+id/fragment_check_item_number"
-                android:layout_alignParentBottom="false"
-                android:layout_toRightOf="@+id/textView7"
-                android:layout_alignTop="@+id/textView7"
-                android:textStyle="bold"/>
-        </RelativeLayout>
+        </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/fragment_check_recycler_view"
@@ -107,7 +133,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_marginTop="@dimen/outer_margin_medium"
             android:layout_marginLeft="@dimen/outer_margin_medium"
             android:layout_marginRight="@dimen/outer_margin_medium"/>
 
@@ -120,94 +145,67 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/outer_margin_big">
+            android:padding="@dimen/outer_margin_medium">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/text_total"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textAllCaps="true"
                 android:id="@+id/textView2"
-                android:layout_alignLeft="@+id/textView3"/>
+                android:layout_alignLeft="@+id/textView3"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textAllCaps="true"
                 android:text="@string/text_discount"
                 android:id="@+id/textView3"
                 android:layout_below="@+id/textView2"
-                android:layout_marginTop="@dimen/outer_margin_big"
-                android:layout_marginRight="@dimen/outer_margin_big"
-                />
+                android:layout_marginTop="@dimen/outer_margin"
+                android:layout_marginRight="@dimen/outer_margin"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="-"
-                android:id="@+id/textView4"
-                android:layout_alignParentLeft="false"
-                android:layout_alignParentStart="false"
-                android:layout_toRightOf="@+id/textView3"
-                android:layout_alignTop="@+id/textView3"
-                android:layout_alignBottom="@+id/textView3"
-                android:layout_marginLeft="@dimen/outer_margin_big"
-                android:gravity="center_vertical"
-                android:layout_marginRight="@dimen/outer_margin_big"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="-"
-                android:id="@+id/textView5"
-                android:layout_toRightOf="@+id/textView2"
-                android:layout_toEndOf="@+id/textView2"
-                android:layout_alignLeft="@+id/textView4"
-                android:layout_alignTop="@+id/textView2"
-                android:gravity="center_vertical"
-                android:layout_alignBottom="@+id/textView2"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textAllCaps="true"
                 android:text="21500$"
-                android:id="@+id/fragment_check_total_count"
-                android:layout_above="@+id/fragment_check_discount_count"
-                android:layout_toRightOf="@+id/textView5"
-                android:layout_alignBottom="@+id/textView5"
-                android:layout_alignLeft="@+id/fragment_check_discount_count"
-                android:layout_marginRight="@dimen/outer_margin"/>
+                android:id="@+id/fragment_check_sum"
+                android:layout_above="@+id/fragment_check_reduction"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignLeft="@+id/fragment_check_reduction"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textAllCaps="true"
                 android:text="143$"
-                android:id="@+id/fragment_check_discount_count"
-                android:layout_toRightOf="@+id/textView4"
-                android:layout_alignBottom="@+id/textView4"
-                android:layout_marginLeft="@dimen/outer_margin_big"/>
+                android:id="@+id/fragment_check_reduction"
+                android:layout_marginLeft="@dimen/outer_margin"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textAllCaps="true"
                 android:text="@string/text_for_payment"
                 android:id="@+id/textView6"
-                android:layout_toRightOf="@+id/fragment_check_total_count"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="@dimen/outer_margin_big"
                 android:gravity="center_vertical"
-                />
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/fragment_check_close_btn"
+                android:layout_alignEnd="@+id/fragment_check_close_btn"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -215,55 +213,53 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textAllCaps="true"
                 android:text="21357$"
-                android:id="@+id/fragment_check_for_payment_count"
-                android:layout_toRightOf="@+id/fragment_check_discount_count"
-                android:layout_alignBottom="@+id/fragment_check_discount_count"
-                android:layout_alignLeft="@+id/textView6"
-                />
+                android:id="@+id/fragment_check_total"
+                android:layout_alignBottom="@+id/fragment_check_reduction"
+                android:layout_alignRight="@+id/textView6"/>
 
             <Button
-                android:layout_width="86dp"
-                android:layout_height="36dp"
-                android:text="@string/button_check_settings"
-                android:id="@+id/button"
+                android:layout_width="@dimen/button_check_width"
+                android:layout_height="@dimen/button_check_height"
+                android:text="@string/button_check_details"
+                android:id="@+id/fragment_check_settings_btn"
                 android:layout_below="@+id/textView3"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="@dimen/outer_margin_big"
+                android:layout_marginTop="@dimen/outer_margin"
                 android:gravity="center"
                 android:lines="2"
                 android:minLines="2"
                 android:singleLine="false"
-                android:textSize="10dp"
+                android:textSize="16dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/button_back_blue"/>
 
             <Button
-                android:layout_width="86dp"
-                android:layout_height="36dp"
+                android:layout_width="@dimen/button_check_width"
+                android:layout_height="@dimen/button_check_height"
                 android:text="@string/button_send_to_payment"
-                android:id="@+id/button2"
-                android:layout_alignTop="@+id/button"
-                android:layout_toRightOf="@+id/button"
-                android:layout_toEndOf="@+id/button"
+                android:id="@+id/fragment_check_sent_to_realization_btn"
+                android:layout_alignTop="@+id/fragment_check_settings_btn"
+                android:layout_toRightOf="@+id/fragment_check_settings_btn"
+                android:layout_toEndOf="@+id/fragment_check_settings_btn"
                 android:minLines="2"
-                android:textSize="10dp"
+                android:textSize="16dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/button_back_green"
-                android:layout_marginLeft="@dimen/outer_margin_big"/>
+                android:layout_marginLeft="@dimen/outer_margin_medium"/>
 
             <Button
-                android:layout_width="86dp"
-                android:layout_height="36dp"
+                android:layout_width="@dimen/button_check_width"
+                android:layout_height="@dimen/button_check_height"
                 android:text="@string/button_close_check"
-                android:id="@+id/button3"
-                android:layout_alignTop="@+id/button2"
-                android:layout_toRightOf="@+id/button2"
+                android:id="@+id/fragment_check_close_btn"
+                android:layout_alignTop="@+id/fragment_check_sent_to_realization_btn"
+                android:layout_toRightOf="@+id/fragment_check_sent_to_realization_btn"
                 android:minLines="2"
-                android:textSize="10dp"
+                android:textSize="16dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/button_back_red"
-                android:layout_marginLeft="@dimen/outer_margin_big"/>
+                android:layout_marginLeft="@dimen/outer_margin_medium"/>
 
         </RelativeLayout>
     </LinearLayout>

@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#038cbc</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorToolBar">#F7F7F7</color>
-    <color name="colorBackBtn">#007CAB</color>
+    <color name="colorBackPayBtn">#6da742</color>
+    <color name="colorBackCloseBtn">#de5126</color>
+    <color name="colorBackMenuBtn">#3d454d</color>
+    <color name="colorBackMenuBtnClicked">#6d6e71</color>
     <color name="colorText">#898989</color>
-
-
+    <color name="colorItemSelected">#F2F2F2</color>
+    <color name="colorItemHeader">#EFF5FB</color>
+    <color name="colorBackMenu">#f1f2f2</color>
     <color name="input_login">#222222</color>
     <color name="input_login_hint">#999999</color>
     <color name="btn_help">#00aaeb</color>
-
+    <color name="btn_table_open">#CF4520</color>
+    <color name="btn_table_open_clicked">#963821</color>
 </resources>

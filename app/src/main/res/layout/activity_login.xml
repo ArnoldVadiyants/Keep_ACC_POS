@@ -1,119 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-             android:gravity="center"
-    >
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageView2"
-        android:scaleType="centerCrop"
-        android:src="@drawable/main_back"
-        android:background="@drawable/back_color"/>
 
-    <ImageView
-        android:layout_width="192dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageView3"
-        android:layout_gravity="left|top"
-        android:background="@drawable/label_back"
-        android:src="@drawable/logo"
-        android:layout_marginLeft="@dimen/outer_margin_big"
-        android:paddingLeft="14dp"
-        android:paddingRight="14dp"
-        android:paddingBottom="14dp"
-        android:paddingTop="28dp"
-        android:scaleType="fitCenter"/>
 
     <LinearLayout
-        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="left|top"
+            android:background="@drawable/label_back"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
             android:layout_weight="1"
-            >
+            android:paddingLeft="196dp"
+            android:paddingRight="196dp"
+            android:paddingTop="@dimen/outer_margin_very_big"
+            android:paddingBottom="@dimen/outer_margin_big"/>
 
-        </FrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="2">
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/activity_login_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_weight="1">
+            android:hint="@string/hint_mail"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:layout_marginBottom="@dimen/outer_margin"
+            android:layout_alignRight="@+id/activity_login_sign_in_btn"
+            android:layout_alignEnd="@+id/activity_login_sign_in_btn"
+            android:layout_alignLeft="@+id/activity_login_sign_in_btn"
+            android:layout_alignStart="@+id/activity_login_sign_in_btn"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginRight="-16dp"/>
 
-            <EditText
-                android:id="@+id/activity_login_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/outer_margin_big"
-                android:hint="@string/hint_login"
-                android:inputType="textEmailAddress"
-                android:singleLine="true"
-                android:padding="10dp"/>
+        <!-- Login Button -->
 
-            <EditText
-                android:id="@+id/activity_login_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/outer_margin_big"
-                android:hint="@string/hint_password"
-                android:inputType="textPassword"
-                android:padding="10dp"
-                android:singleLine="true"
-                />
+        <Button
+            android:id="@+id/activity_login_sign_in_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_check_height"
+            android:background="@drawable/button_back_blue"
+            android:text="@string/button_next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/activity_login_email"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/outer_margin"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignRight="@+id/activity_login_registered_btn"/>
 
-            <!-- Login Button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_check_height"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/text_not_registered"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/activity_login_sign_in_btn"
+            android:layout_marginLeft="@dimen/outer_margin"
+            android:gravity="left|center_vertical"
+            android:textStyle="bold"/>
 
-            <Button
-                android:id="@+id/activity_login_sign_in_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
-                android:background="@drawable/button_back_blue_gradient"
-                android:text="@string/button_sign_in"
-                android:textAllCaps="true"
-                android:textColor="@android:color/white"
-                android:layout_marginBottom="@dimen/outer_margin_big"
-                android:textSize="16dp"
-                android:layout_gravity="center_horizontal"/>
+        <Button
+            android:layout_width="@dimen/button_registered_width"
+            android:layout_height="@dimen/button_check_height"
+            android:text="@string/button_registration"
+            android:id="@+id/activity_login_registered_btn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/activity_login_sign_in_btn"
+            android:layout_marginLeft="@dimen/outer_margin"
+            android:layout_marginRight="@dimen/outer_margin"
+            android:background="@drawable/button_back_border_gray"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/textView4"/>
 
-            <!-- Link to Login Screen -->
+        <!-- Link to Login Screen -->
+<!--
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_box_remember"
+            android:id="@+id/activity_login_remember_checkBox"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/outer_margin_medium"
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/check_box_remember"
-                android:id="@+id/activity_login_remember_checkBox"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="@dimen/outer_margin_medium"
-                />
+           />-->
+<!--
+        <Button
+            android:id="@+id/activity_login_help_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="@string/button_help"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_help"
+            android:textSize="15dp"
+            android:singleLine="false"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_back_gray"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            />-->
+    </RelativeLayout>
 
-            <Button
-                android:id="@+id/activity_login_help_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:text="@string/button_help"
-                android:textAllCaps="false"
-                android:textColor="@color/btn_help"
-                android:textSize="15dp"
-                android:singleLine="false"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/button_back_gray"
-                />
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-    </LinearLayout>
-
-</FrameLayout>
+</LinearLayout>

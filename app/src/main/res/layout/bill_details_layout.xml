@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/outer_margin"
+                android:paddingTop="32dp"
+                android:paddingRight="@dimen/outer_margin"
+                android:paddingBottom="@dimen/outer_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_num_bill"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:id="@+id/textview"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_bill_num"
+        android:layout_alignParentTop="false"
+        android:layout_toRightOf="@+id/textview"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/button_table_text"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_table"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_below="@+id/bill_det_bill_num"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_state"
+        android:id="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/textView15"
+        android:layout_marginBottom="@dimen/outer_margin"
+        android:layout_marginRight="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_state"
+        android:layout_below="@+id/bill_det_table"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_date"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/outer_margin"
+        android:layout_marginRight="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_date"
+        android:layout_below="@+id/bill_det_state"
+        android:layout_toRightOf="@+id/textView19"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView21"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"
+        android:text="@string/text_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_waiter"
+        android:layout_below="@+id/bill_det_date"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@+id/textView21"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_client"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_client"
+        android:layout_below="@+id/bill_det_waiter"
+        android:layout_toRightOf="@+id/textView23"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_count_guest"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView23"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_count_guest"
+        android:layout_marginBottom="@dimen/outer_margin"
+        android:layout_below="@+id/bill_det_client"
+        android:layout_toRightOf="@+id/textView25"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_sum_price"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_sum_price"
+        android:layout_below="@+id/bill_det_count_guest"
+        android:layout_toRightOf="@+id/textView27"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_reduction"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_reduction"
+        android:layout_below="@+id/bill_det_sum_price"
+        android:layout_marginBottom="@dimen/outer_margin"
+        android:layout_toRightOf="@+id/textView29"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_total"
+        android:id="@+id/textView31"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_total"
+        android:layout_toRightOf="@+id/textView31"
+        android:layout_marginBottom="@dimen/outer_margin"
+        android:layout_below="@+id/bill_det_reduction"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_date_created"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/textView31"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/bill_det_created_date"
+        android:layout_below="@+id/bill_det_total"
+        android:layout_toRightOf="@+id/textView33"
+        />
+</RelativeLayout>

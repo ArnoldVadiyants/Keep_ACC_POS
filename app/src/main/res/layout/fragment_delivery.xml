@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/main_back"
+        android:scaleType="centerCrop"
+        android:background="@drawable/back_color"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add"
+        android:id="@+id/fragm_delivery_add_btn"
+        android:layout_margin="@dimen/outer_margin"
+        android:background="@drawable/button_back_green"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout2"
+        android:background="@android:color/white"
+        android:layout_below="@+id/fragm_delivery_add_btn"
+        android:layout_marginLeft="@dimen/outer_margin"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginBottom="@dimen/outer_margin"
+        android:padding="@dimen/outer_margin_medium">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_num_bill"
+            android:id="@+id/fragm_delivery_check_number"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_state"
+            android:id="@+id/fragm_delivery_state"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_date"
+            android:id="@+id/fragm_delivery_date"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/fragm_delivery_client"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:text="@string/text_client"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_discount2"
+            android:id="@+id/fragm_delivery_discount"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/button_address"
+            android:id="@+id/fragm_delivery_address"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textIsSelectable="true"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_mobile"
+            android:id="@+id/fragm_delivery_mobile_number"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_date_preorder"
+            android:id="@+id/fragm_delivery_date_preorder"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_time_preorder"
+            android:id="@+id/fragm_delivery_time_preorder"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_sum_price"
+            android:id="@+id/fragm_delivery_sum_price"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_reduction"
+            android:id="@+id/fragm_delivery_reduction"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_total"
+            android:id="@+id/fragm_delivery_total"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragm_delivery_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/outer_margin_medium"
+        android:layout_marginRight="@dimen/outer_margin_medium"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+</RelativeLayout>

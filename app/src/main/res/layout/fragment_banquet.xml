@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/main_back"
+        android:scaleType="centerCrop"
+        android:background="@drawable/back_color"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/outer_margin"
+        android:id="@+id/linearLayout2"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_num_bill"
+            android:id="@+id/fragm_banquet_check_number"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_state"
+            android:id="@+id/fragm_banquet_state"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_date_start"
+            android:id="@+id/fragm_banquet_date_start"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_date_finish"
+            android:id="@+id/fragm_banquet_date_finish"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_staff"
+            android:id="@+id/fragm_banquet_personal"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_mobile"
+            android:id="@+id/fragm_banquet_mobile_number"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_changes"
+            android:id="@+id/fragm_banquet_change"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_date"
+            android:id="@+id/fragm_banquet_check_date"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/fragm_banquet_client"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:text="@string/text_client"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_hall"
+            android:id="@+id/fragm_banquet_check_hall"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_count_guest"
+            android:id="@+id/fragm_banquet_count_guest"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_discount2"
+            android:id="@+id/fragm_banquet_discount"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_prepay"
+            android:id="@+id/fragm_banquet_prepay"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_sum_price"
+            android:id="@+id/fragm_banquet_sum_price"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_reduction"
+            android:id="@+id/fragm_banquet_reduction"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_total"
+            android:id="@+id/fragm_banquet_total"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/outer_margin_medium"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragm_banquet_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/outer_margin_medium"
+        android:layout_marginRight="@dimen/outer_margin_medium"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginBottom="@dimen/outer_margin"/>
+</RelativeLayout>

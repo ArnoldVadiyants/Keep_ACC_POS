@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/main_back"
+        android:scaleType="centerCrop"
+        android:background="@drawable/back_color"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
+
+    <ImageButton
+        android:layout_width="@dimen/icon_size_big"
+        android:layout_height="@dimen/icon_size_big"
+        android:id="@+id/fragment_check_menu_back_button"
+        android:background="@android:color/transparent"
+        android:src="@drawable/img_arrows"
+        android:layout_marginBottom="@dimen/outer_margin_small"
+        android:scaleType="centerInside"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/fragment_check_menu_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
         app:paddingEnd="8dp"
-        app:paddingStart="8dp"/>
+        app:paddingStart="8dp"
+        android:background="@drawable/main_back"/>
 </LinearLayout>
+</FrameLayout>
